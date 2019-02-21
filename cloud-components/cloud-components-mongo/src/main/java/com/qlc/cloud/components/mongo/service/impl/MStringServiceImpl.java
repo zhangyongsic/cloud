@@ -1,12 +1,11 @@
-package com.qlc.cloud.components.mongoservice.impl;
+package com.qlc.cloud.components.mongo.service.impl;
 
-import com.qlc.cloud.components.mongoservice.MService;
+import com.qlc.cloud.components.mongo.service.MService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 
-public class MIntegerServiceImpl<R extends MongoRepository<T,Integer>,T> implements MService<T> {
-
+public class MStringServiceImpl<R extends MongoRepository<T,String>,T> implements MService<T> {
     @Autowired
     private R mongoRepository;
 
@@ -15,6 +14,6 @@ public class MIntegerServiceImpl<R extends MongoRepository<T,Integer>,T> impleme
     }
 
     public T findById(Object id) {
-        return this.mongoRepository.findOne((Integer) id);
+        return this.mongoRepository.findOne((String) id);
     }
 }

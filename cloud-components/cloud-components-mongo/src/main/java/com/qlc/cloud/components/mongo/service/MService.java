@@ -1,4 +1,4 @@
-package com.qlc.cloud.components.mongoservice;
+package com.qlc.cloud.components.mongo.service;
 
 
 public interface MService<T> {
