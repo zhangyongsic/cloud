@@ -11,5 +11,12 @@
 
     <artifactId>cloud-components-mongo</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
