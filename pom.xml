@@ -13,6 +13,7 @@
         <module>cloud-modules</module>
         <module>cloud-entitys</module>
         <module>cloud-services</module>
+        <module>cloud-study</module>
     </modules>
 
     <properties>
