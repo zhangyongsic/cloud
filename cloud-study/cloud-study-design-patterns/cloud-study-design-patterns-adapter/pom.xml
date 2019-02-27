@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>cloud-study</artifactId>
+        <artifactId>cloud-study-design-patterns</artifactId>
         <groupId>com.qlc.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-study-design-patterns</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cloud-study-decorate-design-patterns</module>
-        <module>cloud-study-design-patterns-proxy</module>
-        <module>cloud-study-design-patterns-decorate</module>
-        <module>cloud-study-design-patterns-adapter</module>
-    </modules>
+    <artifactId>cloud-study-design-patterns-adapter</artifactId>
 
 
 </project>
