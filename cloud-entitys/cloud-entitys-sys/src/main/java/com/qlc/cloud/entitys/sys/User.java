@@ -6,6 +6,9 @@ package com.qlc.cloud.entitys.sys;
  * Time:10:53
  */
 public class User {
+
+    private User(){}
+
     private String name;
 
     public String getName() {

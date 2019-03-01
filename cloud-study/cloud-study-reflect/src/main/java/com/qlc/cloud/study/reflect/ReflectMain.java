@@ -2,6 +2,7 @@ package com.qlc.cloud.study.reflect;
 
 import com.qlc.cloud.entitys.sys.User;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 /**
@@ -12,8 +13,13 @@ import java.lang.reflect.Field;
 public class ReflectMain {
 
     public static void main(String[] args) throws Exception{
-        User user = new User();
         Class<User> userClass = User.class;
+
+        //获取构造方法，设置可使用
+        Constructor<User> constructor = userClass.getDeclaredConstructor();
+        constructor.setAccessible(true);
+
+        User user = constructor.newInstance();
         Field[] fields = userClass.getDeclaredFields();
         for (Field f:fields){
             System.out.println(f.getName());
