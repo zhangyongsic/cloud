@@ -16,6 +16,7 @@
         <module>cloud-components-webportal</module>
         <module>cloud-components-mongo</module>
         <module>cloud-components-test</module>
+        <module>cloud-components-redis</module>
     </modules>
 
 

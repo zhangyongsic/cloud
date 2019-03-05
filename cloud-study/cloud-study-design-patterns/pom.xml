@@ -12,7 +12,6 @@
     <artifactId>cloud-study-design-patterns</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>cloud-study-decorate-design-patterns</module>
         <module>cloud-study-design-patterns-proxy</module>
         <module>cloud-study-design-patterns-decorate</module>
         <module>cloud-study-design-patterns-adapter</module>

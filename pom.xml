@@ -16,19 +16,34 @@
         <module>cloud-study</module>
     </modules>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+    </parent>
+
     <properties>
-        <!-- spring boot 版本 -->
-        <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
-        <lombok.version>1.16.20</lombok.version>
+        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
     </properties>
 
     <dependencies>
-        <!-- lombok -->
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

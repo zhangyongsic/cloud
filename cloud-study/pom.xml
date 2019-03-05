@@ -15,6 +15,7 @@
         <module>cloud-study-design-patterns</module>
         <module>cloud-study-lock</module>
         <module>cloud-study-reflect</module>
+        <module>cloud-study-second-kill</module>
     </modules>
 
 

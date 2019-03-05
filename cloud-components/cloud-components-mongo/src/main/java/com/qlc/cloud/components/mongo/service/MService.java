@@ -1,10 +1,10 @@
 package com.qlc.cloud.components.mongo.service;
 
 
-public interface MService<T> {
+public interface MService<T,PK> {
 
     T save(T t);
 
-    T findById(Object id);
+    T findById(PK pk);
 
 }
