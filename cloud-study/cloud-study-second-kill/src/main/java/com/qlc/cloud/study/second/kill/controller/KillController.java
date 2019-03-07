@@ -38,6 +38,7 @@ public class KillController {
         ExecutorService executors = Executors.newFixedThreadPool(10);
         for (int id = 1;id<=2000;id++){
             Future future = executors.submit(new KillThread2(id));
+            Future futur2e = executors.submit(new KillThread(id));
             System.out.println(future.get());
         }
         return "ok";
@@ -60,6 +61,7 @@ public class KillController {
         @Override
         public void run() {
 
+
             if (valueOperations.increment("goods",-1)<0){
                 System.out.println("客户"+customerId+"没有秒杀到。。。。。。。");
             }else {
@@ -79,6 +81,8 @@ public class KillController {
 
         @Override
         public Object call() throws Exception {
+
+            System.out.println("线程："+Thread.currentThread().getName());
             if (valueOperations.increment("goods",-1)<0){
                 System.out.println("客户"+customerId+"没有秒杀到。。。。。。。");
                 return "fail:客户"+customerId+"没有秒杀到。。。。。。。";

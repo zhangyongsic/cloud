@@ -22,13 +22,14 @@ public class LockMain {
 
         public void run() {
             try {
-                if (lock.tryLock(3000, TimeUnit.MILLISECONDS)){
+                if (lock.tryLock(5000, TimeUnit.MILLISECONDS)){
                     System.out.println(Thread.currentThread().getName()+"获取锁");
                     Thread.sleep(4000);
                 }else {
                     System.out.println(Thread.currentThread().getName()+"没有获取锁");
                 }
             }catch (InterruptedException e){
+                e.getStackTrace();
                 System.out.println(Thread.currentThread().getName()+"异常释放锁");
             }finally {
                 System.out.println(Thread.currentThread().getName()+"执行完毕释放锁");
