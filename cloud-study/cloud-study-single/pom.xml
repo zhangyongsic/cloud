@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>cloud</artifactId>
+        <artifactId>cloud-study</artifactId>
         <groupId>com.qlc.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-study</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cloud-study-design-patterns</module>
-        <module>cloud-study-lock</module>
-        <module>cloud-study-reflect</module>
-        <module>cloud-study-second-kill</module>
-        <module>cloud-study-single</module>
-    </modules>
+    <artifactId>cloud-study-single</artifactId>
 
 
 </project>
