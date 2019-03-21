@@ -10,7 +10,7 @@ public class Proxy extends Subject{
     private RealSubject realSubject;
     protected void request() {
 
-        if (realSubject!=null){
+        if (realSubject==null){
             realSubject = new RealSubject();
         }
 
